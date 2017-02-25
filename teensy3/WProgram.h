@@ -24,6 +24,7 @@
 #include "usb_serial.h"
 #include "usb_seremu.h"
 #include "usb_keyboard.h"
+#include "usb_steno.h"
 #include "usb_mouse.h"
 #include "usb_joystick.h"
 #include "usb_midi.h"
