@@ -47,6 +47,35 @@ int usb_stenotype_send(void);
 extern uint8_t steno_keys[5];
 extern uint8_t keyboard_idle_config;
 extern uint8_t keyboard_idle_count;
+
+// key constants
+extern const uint8_t STENO_RIGHT_S;
+extern const uint8_t STENO_RIGHT_G;
+extern const uint8_t STENO_RIGHT_B;
+extern const uint8_t STENO_RIGHT_R;
+extern const uint8_t STENO_LEFT_R;
+extern const uint8_t STENO_LEFT_W;
+extern const uint8_t STENO_LEFT_K;
+
+extern const uint8_t STENO_RIGHT_D;
+extern const uint8_t STENO_RIGHT_T;
+extern const uint8_t STENO_RIGHT_L;
+extern const uint8_t STENO_RIGHT_P;
+extern const uint8_t STENO_RIGHT_F;
+extern const uint8_t STENO_ASTERISK;
+
+extern const uint8_t STENO_LEFT_H;
+extern const uint8_t STENO_LEFT_P;
+extern const uint8_t STENO_LEFT_T;
+extern const uint8_t STENO_LEFT_S;
+extern const uint8_t STENO_NUMBAR;
+
+extern const uint8_t STENO_U;
+extern const uint8_t STENO_E;
+extern const uint8_t STENO_O;
+extern const uint8_t STENO_A;
+extern const uint8_t STENO_RIGHT_Z;
+
 #ifdef __cplusplus
 }
 #endif

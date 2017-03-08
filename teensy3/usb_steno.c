@@ -37,6 +37,33 @@
 #ifdef STENO_INTERFACE // defined by usb_dev.h -> usb_desc.h
 #if F_CPU >= 20000000
 
+const uint8_t STENO_RIGHT_S = 0;
+const uint8_t STENO_RIGHT_G = 1;
+const uint8_t STENO_RIGHT_B = 2;
+const uint8_t STENO_RIGHT_R = 3;
+const uint8_t STENO_LEFT_R = 5;
+const uint8_t STENO_LEFT_W = 6;
+const uint8_t STENO_LEFT_K = 7;
+
+const uint8_t STENO_RIGHT_D = 10;
+const uint8_t STENO_RIGHT_T = 11;
+const uint8_t STENO_RIGHT_L = 12;
+const uint8_t STENO_RIGHT_P = 13;
+const uint8_t STENO_RIGHT_F = 14;
+const uint8_t STENO_ASTERISK = 15;
+
+const uint8_t STENO_LEFT_H = 16;
+const uint8_t STENO_LEFT_P = 17;
+const uint8_t STENO_LEFT_T = 18;
+const uint8_t STENO_LEFT_S = 19;
+const uint8_t STENO_NUMBAR = 21;
+
+const uint8_t STENO_U = 32;
+const uint8_t STENO_E = 33;
+const uint8_t STENO_O = 35;
+const uint8_t STENO_A = 36;
+const uint8_t STENO_RIGHT_Z = 37;
+
 // which modifier keys are currently pressed
 // 1=left ctrl,	   2=left shift,   4=left alt,	  8=left gui
 // 16=right ctrl, 32=right shift, 64=right alt, 128=right gui
@@ -53,8 +80,6 @@ uint8_t stenotype_idle_count=0;
 
 void usb_stenotype_press_key(uint8_t key_index)
 {
-	int i;
-
     uint8_t key_byte = key_index / 8;
     uint8_t key_bit = key_index % 8;
 
@@ -68,8 +93,6 @@ void usb_stenotype_press_key(uint8_t key_index)
 
 void usb_stenotype_release_key(uint8_t key_index)
 {
-	int i;
-
     uint8_t key_byte = key_index / 8;
     uint8_t key_bit = key_index % 8;
 
